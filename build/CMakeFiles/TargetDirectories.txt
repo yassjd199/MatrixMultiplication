@@ -1,0 +1,3 @@
+/home/yassjd199/Projects/MatrixMultiplication/build/CMakeFiles/MatrixMultiplication.dir
+/home/yassjd199/Projects/MatrixMultiplication/build/CMakeFiles/edit_cache.dir
+/home/yassjd199/Projects/MatrixMultiplication/build/CMakeFiles/rebuild_cache.dir
