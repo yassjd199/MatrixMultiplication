@@ -1,5 +1,4 @@
 
-```markdown
 # Matrix Multiplication with Multithreading
 
 This project demonstrates the implementation of matrix multiplication using multithreading in C++. The goal is to leverage the power of multiple CPU cores to speed up the matrix multiplication process for larger matrices.
