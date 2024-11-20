@@ -15,24 +15,23 @@ void fillRandom(Matrix& matrix) {
 }
 
 int main() {
-    Matrix A(1000, 1000), B(1000, 1000);
-    fillRandom(A);
-    fillRandom(B);
+    // Matrix A(1000, 1000), B(1000, 1000);
+    // fillRandom(A);
+    // fillRandom(B);
 
-
-    // std::cin >> rowsA >> colsA;
-    // Matrix A(rowsA, colsA);
-    // A.input();
-    // std::cin >> rowsB >> colsB;
-    // Matrix B(rowsB, colsB);
-    // B.input();
-    std::cout << std::min(1000, (int)std::thread::hardware_concurrency()) << std::endl;
+    int rowsA, colsA, rowsB, colsB;
+    std::cin >> rowsA >> colsA;
+    Matrix A(rowsA, colsA);
+    A.input();
+    std::cin >> rowsB >> colsB;
+    Matrix B(rowsB, colsB);
+    B.input();
 
     try {
-        MatrixMultiplication mm(std::min(1, (int)std::thread::hardware_concurrency()));
+        MatrixMultiplication mm(std::min(rowsA, (int)std::thread::hardware_concurrency()));
         Matrix C = mm.multiply(A, B);
 
-        //C.display();
+        C.display();
     } catch (const std::invalid_argument& e) {
         std::cerr << e.what() << std::endl;
     }
